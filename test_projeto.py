@@ -40,6 +40,18 @@ class TestProjetoPython(unittest.TestCase):
         }
         self.assertEqual(ids_desafios, set(curso_guiado.AULAS_DESAFIOS))
 
+    def test_encontros_da_apostila_tem_objetivo_e_roteiro(self):
+        encontros = [
+            nivel for nivel in curso_guiado.NIVEIS
+            if nivel["nome"].startswith("Encontro ")
+        ]
+        self.assertEqual(len(encontros), 3)
+        self.assertEqual(sum(len(nivel["desafios"]) for nivel in curso_guiado.NIVEIS), 60)
+        for encontro in encontros:
+            self.assertTrue(encontro["objetivo"])
+            self.assertTrue(encontro["roteiro"])
+            self.assertTrue(encontro["desafios"])
+
     def test_curso_guiado_desbloqueia_nivel_seguinte(self):
         primeiro_nivel = curso_guiado.NIVEIS[0]["desafios"]
         concluidos = {desafio["id"] for desafio in primeiro_nivel}
@@ -83,6 +95,9 @@ class TestProjetoPython(unittest.TestCase):
         self.assertEqual(salvar.call_count, total_desafios)
         self.assertIn("Dica:", saida.getvalue())
         self.assertEqual(saida.getvalue().count("AULA RÁPIDA"), total_desafios)
+        self.assertIn("Roteiro baseado na apostila", saida.getvalue())
+        self.assertIn("Objetivo do encontro:", saida.getvalue())
+        self.assertIn("Passo a passo:", saida.getvalue())
         self.assertIn("Parabéns!", saida.getvalue())
 
 
