@@ -1,0 +1,23 @@
+# Ambientes Python
+.venv/
+venv/
+ENV/
+env/
+
+# Cache e bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Progresso local de estudo
+progresso_*.json
+
+# Ferramentas e arquivos temporários
+.pytest_cache/
+.coverage
+.vscode/
+.idea/
+*.tmp
+*.log
+Thumbs.db
+.DS_Store
