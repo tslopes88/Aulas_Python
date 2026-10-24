@@ -1,6 +1,22 @@
 # Aulas de Python — Escola de Programação
 
-Projeto de aprendizagem em Python com exercícios práticos, jogos, um menu interativo e um curso guiado por desafios. O conteúdo começa nos fundamentos e avança gradualmente para lógica, coleções e pequenos sistemas.
+Projeto de aprendizagem em Python para estudar e praticar com meus amigos e colegas. Reúne exercícios, jogos, um menu interativo e um curso guiado por desafios, do básico a pequenos sistemas.
+
+## Executar no navegador
+
+Também dá para praticar sem instalar Python no computador, usando o GitHub Codespaces:
+
+1. Abra [Aulas_Python no Codespaces](https://codespaces.new/tslopes88/Aulas_Python) e entre na sua conta GitHub.
+2. Crie um Codespace para a branch `main` e aguarde o ambiente abrir no navegador.
+3. No terminal do Codespace, execute:
+
+   ```bash
+   python3 menu_exercicios.py
+   ```
+
+4. Escolha o curso guiado no menu e responda aos desafios pelo terminal.
+
+Cada pessoa pode criar seu próprio ambiente Codespaces. O GitHub oferece uma franquia mensal para contas pessoais; confira [os limites e detalhes de cobrança](https://docs.github.com/en/billing/concepts/product-billing/github-codespaces) antes de usar, pois o uso além da franquia pode gerar cobrança conforme as configurações da conta.
 
 ## O que você vai encontrar
 
