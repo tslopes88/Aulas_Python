@@ -1,6 +1,10 @@
-# Trabalho Final — Central de Atendimento
+# 📬 Trabalho Final — Central de Atendimento
 
-Este programa organiza chamados de suporte por ordem de chegada. Também permite desfazer o último atendimento, listar os chamados pendentes por prioridade, procurar um protocolo e consultar um relatório.
+Imagine uma equipe recebendo pedidos de ajuda durante o dia: quem chegou primeiro precisa ser atendido, mas também deve ser possível corrigir um atendimento feito por engano. Esta Central de Atendimento representa essa situação em um programa simples de terminal.
+
+Ao usar o menu, você pode registrar chamados, atender pela ordem de chegada, desfazer o atendimento mais recente, organizar os pendentes por prioridade e procurar um chamado pelo protocolo. No relatório, a contagem por prioridade mostra a recursão em funcionamento.
+
+🧩 O trabalho reúne conceitos estudados no módulo: fila (**FIFO**), pilha (**LIFO**), ordenação, busca binária e recursão. Os chamados são exemplos de estudo e ficam na memória somente enquanto o programa está aberto.
 
 ## Como executar
 
