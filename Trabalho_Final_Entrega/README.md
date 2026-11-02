@@ -6,59 +6,40 @@ Ao usar o menu, você pode registrar chamados, atender pela ordem de chegada, de
 
 🧩 O trabalho reúne conceitos estudados no módulo: fila (**FIFO**), pilha (**LIFO**), ordenação, busca binária e recursão. Os chamados são exemplos de estudo e ficam na memória somente enquanto o programa está aberto.
 
-## Como executar
+## Executar pelo navegador
 
-### Pelo navegador, usando GitHub Codespaces
+O projeto roda no navegador com o GitHub Codespaces, sem precisar instalar Python no computador.
 
-Você pode abrir e executar o projeto sem instalar Python no seu computador:
-
-1. Acesse [Aulas_Python no Codespaces](https://codespaces.new/tslopes88/Aulas_Python) e entre na sua conta GitHub.
-2. Crie um Codespace para a branch `main` e espere o ambiente abrir.
-3. No terminal do Codespace, entre na pasta do trabalho:
+1. Abra [Aulas_Python no Codespaces](https://codespaces.new/tslopes88/Aulas_Python) e entre na sua conta GitHub.
+2. Crie um Codespace usando a branch `main`. Na primeira vez, o GitHub prepara o ambiente; aguarde até aparecer o editor do projeto.
+3. Abra o terminal integrado pelo menu **Terminal → New Terminal**. Os comandos abaixo devem ser digitados nesse terminal, não no campo de busca do GitHub.
+4. Entre na pasta do trabalho final:
 
    ```bash
    cd Trabalho_Final_Entrega
    ```
 
-4. Inicie o programa:
+5. Inicie a Central:
 
    ```bash
    python3 desafio_final.py
    ```
 
-5. Escolha as opções no menu e digite as respostas no terminal. Para encerrar, escolha `0`.
+6. Quando aparecer o menu, digite o número da opção desejada e pressione Enter. Siga as perguntas para cadastrar, atender ou consultar chamados. Para sair do programa, escolha `0`.
 
-O Codespaces tem franquia mensal de uso para contas pessoais; confira [os limites e detalhes de cobrança](https://docs.github.com/en/billing/concepts/product-billing/github-codespaces).
+### Conferir os testes
 
-### No computador
-
-Com Python instalado, abra o terminal nesta pasta e rode:
-
-```bash
-python desafio_final.py
-```
-
-No Windows, você também pode usar:
-
-```bash
-py desafio_final.py
-```
-
-## Como executar os testes
-
-Para executar os testes no Codespaces, estando dentro de `Trabalho_Final_Entrega`, rode:
+No mesmo terminal, ainda dentro da pasta `Trabalho_Final_Entrega`, execute:
 
 ```bash
 python3 desafio_final_testes.py
 ```
 
-No computador, rode os testes fornecidos para conferir as funções:
+O resultado esperado é **9/9 testes passaram**. Depois, você pode iniciar novamente `python3 desafio_final.py` para experimentar o menu.
 
-```bash
-python desafio_final_testes.py
-```
+### Encerrar o Codespace
 
-Quando os nove testes passarem, execute o programa e experimente as opções do menu. Os chamados ficam na memória enquanto o programa está aberto.
+Os chamados deste exercício ficam na memória e são apagados quando o programa termina. Ao acabar de estudar, feche o terminal e pare o Codespace na página [github.com/codespaces](https://github.com/codespaces). Contas pessoais têm uma franquia mensal de uso; consulte [os limites e detalhes de cobrança](https://docs.github.com/en/billing/concepts/product-billing/github-codespaces).
 
 ## Arquivos
 
