@@ -1,0 +1,16 @@
+# Arquivos locais de Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.coverage*
+
+# Progresso de estudo e pacotes locais
+progresso_*.json
+*.zip
+
+# O original do trabalho final é outro repositório; a cópia de entrega fica abaixo
+Trabalho_Final/
+Trabalho_Final_Entrega/_backup_*/
+Trabalho_Final_Entrega/.agents/
