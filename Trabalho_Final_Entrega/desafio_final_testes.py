@@ -101,8 +101,10 @@ def _():
     assert d.contar_por_prioridade([], 3) == 0
 
 
-ok = sum(1 for _, passou, _ in resultados if passou)
-print()
-for nome, passou, msg in resultados:
-    print(("[OK]   " if passou else "[FALHA]"), nome, f"\n         {msg}" if msg else "")
-print(f"\nResultado: {ok}/{len(resultados)} testes passaram.")
+if __name__ == "__main__":
+    ok = sum(1 for _, passou, _ in resultados if passou)
+    print()
+    for nome, passou, msg in resultados:
+        print(("[OK]   " if passou else "[FALHA]"), nome, f"\n         {msg}" if msg else "")
+    print(f"\nResultado: {ok}/{len(resultados)} testes passaram.")
+    raise SystemExit(0 if ok == len(resultados) else 1)

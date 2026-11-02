@@ -34,6 +34,13 @@ def abrir_chamado(fila, todos, nome, descricao, prioridade):
     3. Coloque o chamado no FIM da fila e tambem na lista 'todos'
     4. Devolva o chamado criado
     """
+    if not isinstance(nome, str) or not nome.strip():
+        raise ValueError("Nome do chamado deve ser informado.")
+    if not isinstance(descricao, str) or not descricao.strip():
+        raise ValueError("Descricao do chamado deve ser informada.")
+    if isinstance(prioridade, bool) or not isinstance(prioridade, int) or prioridade not in (1, 2, 3):
+        raise ValueError("Prioridade deve ser 1, 2 ou 3.")
+
     protocolo = len(todos) + 1
     chamado = criar_chamado(protocolo, nome, descricao, prioridade)
     fila.append(chamado)

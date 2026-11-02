@@ -12,8 +12,8 @@ O projeto roda no navegador com o GitHub Codespaces, sem precisar instalar Pytho
 
 1. Abra [Aulas_Python no Codespaces](https://codespaces.new/tslopes88/Aulas_Python) e entre na sua conta GitHub.
 2. Crie um Codespace usando a branch `main`. Na primeira vez, o GitHub prepara o ambiente; aguarde até aparecer o editor do projeto.
-3. Abra o terminal integrado pelo menu **Terminal → New Terminal**. Os comandos abaixo devem ser digitados nesse terminal, não no campo de busca do GitHub.
-4. Entre na pasta do trabalho final:
+3. Abra o terminal integrado pelo menu **Terminal → New Terminal**.
+4. Entre na pasta do trabalho:
 
    ```bash
    cd Trabalho_Final_Entrega
@@ -25,23 +25,28 @@ O projeto roda no navegador com o GitHub Codespaces, sem precisar instalar Pytho
    python3 desafio_final.py
    ```
 
-6. Quando aparecer o menu, digite o número da opção desejada e pressione Enter. Siga as perguntas para cadastrar, atender ou consultar chamados. Para sair do programa, escolha `0`.
+6. Digite o número da opção desejada e pressione Enter. Para sair do programa, escolha `0`.
 
-### Conferir os testes
+## Conferir os testes
 
-No mesmo terminal, ainda dentro da pasta `Trabalho_Final_Entrega`, execute:
+No mesmo terminal, ainda dentro de `Trabalho_Final_Entrega`, execute os testes do enunciado:
 
 ```bash
 python3 desafio_final_testes.py
 ```
 
-O resultado esperado é **9/9 testes passaram**. Depois, você pode iniciar novamente `python3 desafio_final.py` para experimentar o menu.
+O resultado esperado é **9/9 testes passaram**. Também há testes complementares para verificar casos de borda:
 
-### Encerrar o Codespace
+```bash
+python3 desafio_final_testes_complementares.py
+```
 
-Os chamados deste exercício ficam na memória e são apagados quando o programa termina. Ao acabar de estudar, feche o terminal e pare o Codespace na página [github.com/codespaces](https://github.com/codespaces). Contas pessoais têm uma franquia mensal de uso; consulte [os limites e detalhes de cobrança](https://docs.github.com/en/billing/concepts/product-billing/github-codespaces).
+O resultado esperado é **11/11 testes complementares passaram**.
 
 ## Arquivos
 
-- `desafio_final.py` — programa e funções completadas.
-- `desafio_final_testes.py` — testes fornecidos junto com o enunciado.
+- `desafio_final.py` — código principal com o menu e as funções do trabalho.
+- `desafio_final_testes.py` — testes originais do enunciado.
+- `desafio_final_testes_complementares.py` — testes adicionais de casos de borda e validação.
+
+Os chamados ficam na memória e são apagados quando o programa termina. Contas pessoais do Codespaces têm franquia mensal de uso; consulte [os limites e detalhes de cobrança](https://docs.github.com/en/billing/concepts/product-billing/github-codespaces).
